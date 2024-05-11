@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{0.9in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright{\large}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]\vspace{-3pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE \scshape Chirag Soni} \\ \vspace{1pt}
+    \small +91 7737672266 $|$ \href{mailto:sonichirag1999@gmail.com}{\underline{sonichirag1999@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/chirag-soni01/}{\underline{ linkedin.com/in/chirag-soni01}} 
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology (BHU)}{Varanasi, India}
+      {Bachelor of Technology in Metallurgical Engineering}{Jul 2017 -- May 2021}
+  \resumeSubHeadingListEnd
+%
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Druva Data Solutions} $|$ Go, AWS, Distributed Systems}{May 2022 -- Present}
+    \resumeSubSubheading
+      {Software Engineer}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Daintree Team}: Working on Druva’s nexgen storage system. Managing data, deduplication \& file systems.}
+        \resumeItem{\textbf{Debugger Tool}: Developed an innovative internal command line interface (CLI) similar as git for the product file
+system resulting in debugging and evaluating various types of data as per requirements, reducing developers effort for creating custom scripts.}
+ \resumeItem{\textbf{API Signature Validation}: Implemented API’s security validation feature using AWS Paramstore and cryptography for
+signing API cookies and identifying any possible security vulnerabilities.}
+        \resumeItem{\textbf{Cloudcache Development}: Contributed to the development an on-premise software appliance that
+optimizes backup and restores. Reduced backup and restore time by 30\%, improving data protection and
+minimizing downtime.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    HCL
+%-------------------------------------------
+
+    \resumeProjectHeading
+      {\textbf{HCL Technologies} $|$ Python, Machine Learning}{Jun 2021 -- Apr 2022}
+      \resumeSubSubheading
+      {Software Engineer}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{R\&D}: Development in the field of Topological Data Analysis (TDA) for identifying credit card transaction frauds achieving 92\% accuracy and used confusion matrix to view model’s performance.}
+        \resumeItem{\textbf{Report Extracter}: Developed an innovative tool to extract data from unstructured data reports and aligning data
+as per requirements using SGD optimizer to classify the required information and parsed data as per the required
+format structure by closely working in a team taking initiative on innovation and future of the project.}
+    \resumeItemListEnd
+
+
+% -----------Multiple Positions Heading-----------
+%    Joinsahara.com
+%-------------------------------------------
+
+    \resumeProjectHeading
+      {\textbf{Joinsahara.com} $|$ Python, Natural Language Processing}{May 2020 -- Jun 2020}
+      \resumeSubSubheading
+      {Software Development Engineer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{\textbf{Sentiment Analysis Engine}: Devised an algorithm to get sentiment and count of predefined sets of 5 aspect
+categories of Amazon clothing reviews using Spacy for data processing and NLTK+Vader for
+sentiment analysis resulting in making a
+better online shopping experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Instagram Clone} $|$ \emph{JavaScript, React Native, Redux, Firebase, Expo}}{Jan 2021 -- Feb 2021}
+          \resumeItemListStart
+            \resumeItem{Created a hybrid Instagram-like social media mobile application using React-Native framework
+for Android and IOS devices.}
+            \resumeItem{App allows users to post images with description on their profile and allows them to interact
+with other posts by 'liking', 'commenting', 'saving', and 'following', real-time 'messaging' to
+different users’ accounts.}
+            \resumeItem{Utilized Firestore for storing data on the signup page such as username, email ID, password
+and profile picture.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Inventory Management of a Marketplace} $|$ \emph{PHP, HTML, MySQL, DBMS, JavaScript}}{Dec 2018 – Jan 2019}
+          \resumeItemListStart
+            \resumeItem{Developed a sample website for entries of a marketplace in the database.}
+            \resumeItem{Three tables were created in the database which organized buying, selling of goods and
+updating current stock on Apache server.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Go, C++, Python, Java, JavaScript, MySQL, Shell.} \\
+     \textbf{Tools \& Technologies}{: ReactJs, React-native, DBMS, SQL, Linux, Docker, Jira, Git, VS Code} \\
+     \textbf{Cloud}{: AWS, S3, DyanmoDB, CloudWatch, Microservices}
+    }}
+ \end{itemize}
+ 
+%-----------Awards-----------
+\section{Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Winner of Druva Hackathon}}{Jan 2023}
+          \resumeItemListStart
+            \resumeItem{Led winning team in Druva’s company-wide hackathon with 200+ participants.}
+            \resumeItem{Developing a new
+data resiliency solution saving around 15K dollars per month, by listing S3 head objects and storing metadata in inhouse S3 wrapper called hubble.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HCL ERS Champion Award}}{Aug 2022}
+          \resumeItemListStart
+            \resumeItem{Demonstrated the versatility to achieve more than expected accuracy by efficiently implementing algorithm using Topological Data Analysis.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%
+
+
+
+
+
+%-------------------------------------------
+\end{document}
